@@ -10,4 +10,4 @@ app.get('/api/lookandsay/:input', function (req, res) {
 
 app.listen(3000, function () {
     console.log('Started express on port 3000')
-  })
+})
