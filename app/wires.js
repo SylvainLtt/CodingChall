@@ -1,25 +1,14 @@
 var fs = require('fs');
 
-let wires = {};
-
-
-/** Evaluate an operation and return the result if it can
- * 
- * @param {*} gate operation
- * @param {*} left left operand
- * @param {*} right right operand
- */
-
-
 module.exports = {
 
-    /** Read assembly instruction and parse it to get a 
+    /** Read assembly instruction and parse it to get a object with wires as keys and gate, left and right operands as values
      * 
      */
     parseFile : function(){
 
         // object to store all wires
-        let wire = {}
+        let wires = {}
         fs.readFileSync('app/assembly-instructions.txt').toString().split('\r\n').forEach(line => {
 
             // process each line to get left side, gate, right side and wire
@@ -32,6 +21,8 @@ module.exports = {
             // store wire
             wires[wire] = [ gate, left, right ];
         });
+
+        return wires;
     },
 
     /** Compute gate operation based on gate type, left operand and right operand
