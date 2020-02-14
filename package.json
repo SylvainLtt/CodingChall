@@ -1,0 +1,21 @@
+{
+  "name": "codingchall",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sylvain LOTOUT",
+  "license": "ISC",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/Syl22/CodingChall.git"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}
