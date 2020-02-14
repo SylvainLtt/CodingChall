@@ -2,9 +2,10 @@
   "name": "codingchall",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "start": "node app/app.js"
   },
   "author": "Sylvain LOTOUT",
   "license": "ISC",
