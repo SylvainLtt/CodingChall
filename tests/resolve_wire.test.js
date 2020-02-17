@@ -58,5 +58,8 @@ test('Test assignment', () => {
     expect(wires.resolveWire(undefined, 14, 35410)).toBe(35410);
     expect(wires.resolveWire(undefined, 14587, 62150)).toBe(62150);
     expect(wires.resolveWire(undefined, 35789, 0)).toBe(0);
+});
 
+test('Test parseFile', () => {
+    expect(Object.keys(wires.parseFile()).length).toBe(339);
 });
